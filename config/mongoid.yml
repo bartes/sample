@@ -9,7 +9,8 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
+        -  "<%= ENV['DB1_1_PORT_27017_TCP_ADDR'] %>:<%= ENV['DB1_1_PORT_27017_TCP_PORT'] %>"
+        -  "<%= ENV['DB2_1_PORT_27017_TCP_ADDR'] %>:<%= ENV['DB2_1_PORT_27017_TCP_PORT'] %>"
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -92,7 +93,8 @@ test:
     default:
       database: sample_test
       hosts:
-        - localhost:27017
+        -  "<%= ENV['DB1_1_PORT_27017_TCP_ADDR'] %>:<%= ENV['DB1_1_PORT_27017_TCP_PORT'] %>"
+        -  "<%= ENV['DB1_2_PORT_27017_TCP_ADDR'] %>:<%= ENV['DB1_2_PORT_27017_TCP_PORT'] %>"
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to

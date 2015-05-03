@@ -14,19 +14,22 @@ gem 'mongoid'
 gem 'mongoid-tree'
 
 gem "devise"
+gem 'bcrypt'
 
 gem "high_voltage"
 gem "backbone-support"
 gem "active_model_serializers"
-gem "compass-rails"
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 
 gem "factory_girl_rails"
 gem "faker"
 gem "rails_admin"
+gem "binding_of_caller"
 
 group :test, :development do
   gem "konacha"
   gem "rspec-rails"
+  gem "better_errors"
 end
 
 group :test do
