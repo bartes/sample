@@ -15,6 +15,7 @@ gem 'mongoid-tree'
 
 gem "devise"
 gem 'bcrypt'
+gem 'sinatra', require: nil
 gem "sidekiq"
 gem "redis"
 
