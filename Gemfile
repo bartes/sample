@@ -15,6 +15,8 @@ gem 'mongoid-tree'
 
 gem "devise"
 gem 'bcrypt'
+gem "sidekiq"
+gem "redis"
 
 gem "high_voltage"
 gem "backbone-support"
@@ -25,6 +27,8 @@ gem "factory_girl_rails"
 gem "faker"
 gem "rails_admin"
 gem "binding_of_caller"
+
+gem 'therubyracer',  platforms: :ruby
 
 group :test, :development do
   gem "konacha"
