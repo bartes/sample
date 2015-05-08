@@ -1,0 +1,11 @@
+.bundle
+.coveralls.yml
+.git
+.gitignore
+.travis.yml
+coverage
+fig.yml
+docker-compose.yml
+log
+tmp
+README
